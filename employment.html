@@ -349,14 +349,24 @@
             </div>
             <div>
                 <label for="resume" class="block text-sm font-bold">Upload Resume</label>
-                <input type="file" id="resume" name="resume" required
+                <input type="file" id="resume" name="resume"
+                    class="w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-green-300">
+            </div>
+            <div>
+                <label for="application" class="block text-sm font-bold">Upload Application</label>
+                <input type="file" id="application" name="application" required
                     class="w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-green-300">
             </div>
             <input type="hidden" id="location" name="location">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="New Application!">
-            <button type="submit" class="submit-btn">Submit Application</button>
 
+            <div class="mt-4">
+                <a href="/Thanks Management LLC Application.pdf" target="_blank" class="apply-btn">View & Download
+                    Application</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
         </form>
         <button id="close-popup" class="mt-4 text-red-500">Close</button>
     </div>
